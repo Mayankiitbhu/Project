@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Login</title>
+    <style type="text/css" >
+    body{
+        background-color: rgb(254,230,254);
+    }
+    h1,h2{
+        text-decoration: underline overline;
+        color: rgb(129,0,127);
+        text-align: center;
+        
+    }
+    table{
+        font-family: Sans-Serif;
+        margin-left: auto;
+        margin-right: auto;
+        box-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 3.5px solid;
+        border-color: rgb(129,0,127);
+    }
+    
+    input{
+        border:none;
+        padding: 5px;
+        }
+        
+    .we{
+        text-align: center;
+		
+		
+    }
+    
+    .qw{
+       color: aliceblue;
+       background-color: rgb(129,0,127);
+       margin: auto;
+       margin-left: auto;
+       margin-right: auto;
+       border-radius: 2px;
+       letter-spacing: 0.75px;
+       padding-left: auto;
+       size:12;
+       
+    }
+        
+    </style>
+        
+    </head>
+<body>
+<h1><p><strong>Infy Bank</strong></p></h1>
+<h2>Login</h2>
+<form name="login" onsubmit="return v()" method="post" >
+    <table >
+        <tr>
+            <td><strong>Login ID/Phone Number</strong></td><td> </td><td><input name="id" type="text" size=23 placeholder="Enter Email ID/Phone Number"></td>
+        </tr>
+        <tr>
+            <td><strong>Password</strong></td><td> </td><td><input name="pass" type="password" placeholder="Enter Password" size=23 /></td>
+        </tr>
+    </table>
+    <p class="we"><input name="submit" type="submit" value="Login" class="qw" /> <input name="reset" type="reset" class="qw" value="Reset" /></p>
+</form>
+<script>
+function v(){
+var x=document.forms["login"]["id"].value;
+var y=document.forms["login"]["pass"].value;
+if (x == "" || y==""){
+	alert("Please fill all the fields!");
+	return false;
+}
+else{
+return true;
+}
+}
+</script>
+</body>
+</html>
